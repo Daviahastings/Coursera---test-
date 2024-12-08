@@ -1,0 +1,81 @@
+/* General card styling */
+.card {
+  height: 90vh; /* Reduce card height slightly for spacing */
+  max-width: 90%; /* Limit the width of the cards */
+  display: flex; /* Enable flexbox for alignment */
+  flex-direction: column; /* Align content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Center align items horizontally */
+  margin: 20px auto; /* Add spacing between cards and center horizontally */
+  border-radius: 10px; /* Add subtle rounding for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  padding: 20px; /* Add some padding for content spacing */
+}
+
+/* Ensure text fills the card height */
+.card-body {
+  display: flex; /* Enable flexbox for the card body */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center content vertically within the card body */
+  align-items: center; /* Center align horizontally */
+  height: 100%; /* Make the body fill the card */
+  text-align: justify; /* Justify text for clean alignment */
+}
+
+/* Title and text styling */
+.card-title {
+  font-family: 'Arial', sans-serif; /* Clean and readable font */
+  font-size: 2rem; /* Larger title font */
+  font-weight: bold; /* Emphasized title */
+  text-align: center; /* Center the title text */
+  margin-bottom: 20px; /* Space between title and text */
+}
+
+.card-text {
+  font-family: 'Georgia', serif; /* Elegant serif font for text */
+  font-size: 20px; /* Slightly larger font size */
+  line-height: 1.8; /* Line spacing for readability */
+  color: #555; /* Neutral dark grey text color */
+  max-width: 80%; /* Restrict text width for readability */
+  flex-grow: 1; /* Allow the text to grow and fill the card height */
+  overflow-y: auto; /* Add a scrollbar if the text overflows */
+}
+
+/* Different background for the cards */
+#chicken {
+  background-color: #fff8e1; /* Light yellow for chicken card */
+}
+
+#beef {
+  background-color: #fde3e3; /* Soft pinkish-red for beef card */
+}
+
+#sushi {
+  background-color: #e0f7fa; /* Light cyan for sushi card */
+}
+
+/* Container background */
+.container-fluid {
+  background-color: #f5f5f5; /* Light grey for the container */
+  padding: 0; /* Remove extra padding */
+  margin: 0; /* Remove extra margin */
+}
+
+/* Hide navbar contents for desktop and tablet views */
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: none; /* Hide navbar links */
+  }
+}
+
+@font-face {
+  font-family: 'Glyphicons';
+  src: url('fonts/glyphicons-regular.eot');
+  src: url('fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/glyphicons-regular.woff2') format('woff2'),
+       url('fonts/glyphicons-regular.woff') format('woff'),
+       url('fonts/glyphicons-regular.ttf') format('truetype'),
+       url('fonts/glyphicons-regular.svg#glyphicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
